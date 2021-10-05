@@ -1,0 +1,16 @@
+footer{
+    background: #e13d3a;
+}
+footer{
+    padding: 4rem 0;
+}
+
+footer .logo{
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}

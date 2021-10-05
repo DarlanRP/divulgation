@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body, input, textarea, button, a{
+    font: 400 16px 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+
+.title{
+    font: 700 1.875rem 'Poppins', sans-serif;
+    color: #29292e;
+    -webkit-font-smoothing: auto;
+}
+.toggle{
+    color: #e13d3a;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.section .title{
+    margin-bottom: 1rem;
+}
+
+.section header{
+    margin-bottom: 4rem;
+}
+
+.section header strong{
+    color: #e13d3a;
+}
+/*=== MEDIA QUERIES ===*/
+
+/*Large devices: 1200 > */
+@media (min-width: 1200px){
+    .container{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section{
+        padding: 10rem 0;
+    }
+    nav .menu{
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+    nav .menu ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul li a.title{
+        font: 400 1rem 'Roboto', sans-serif;
+    }
+
+    nav .icon-menu{
+        display: none;
+    }
+
+    .button{
+        height: 3.125rem;
+        margin-right: 2px;
+    }
+
+    .button2{
+        height: 3.125rem;
+    }
+
+}
+
+/*Large devices : 992 > */
+@media (min-width: 992px){
+
+    .title{
+        font-size: 2.25rem;
+    }
+    .subtitle{
+        font-size: 1.125rem;
+    }
+}

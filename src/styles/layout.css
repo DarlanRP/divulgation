@@ -1,0 +1,209 @@
+
+/* ---- header ----- */
+#header{
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2rem;
+    display: flex;
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color:#f8f8f8;
+}
+
+#header.scroll{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.178);
+    background: #f8f6ff;
+}
+/*------------------------*/
+/*NAV*/
+nav{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+nav ul li{
+    text-align: center;
+}
+
+nav ul li a{
+    transition: 0.2s;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color:#e13d3a;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e13d3a;
+
+    position:absolute;
+    left: 0;
+    bottom: -0.5rem;
+
+    transition: 0.2s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+nav .menu{
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.3s;
+}
+
+nav .icon-close{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+
+    transition: 0.2s;
+    
+}
+
+nav.show .icon-close{
+    opacity: 1;
+    visibility: visible;
+    top: 1.5rem;
+
+    
+}
+/* Menu responsivo -------------*/
+nav.show .menu{
+    opacity: 1;
+    visibility: visible;
+
+    background: #fff;
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-content: center;
+}
+nav.show ul.grid{
+    gap: 4rem;
+}
+
+
+/*------------------------------------*/
+
+main{
+    margin-top: 6.5rem;
+}
+
+body{
+    color: #29292e;
+    background: #f8f8f8;
+    -webkit-font-smoothing: antialised;
+}
+.button{
+    background-color: #e13d3a;
+    color: #fff;
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.3rem;
+    transition: 0.2s;
+}
+
+.button2{
+    border-style: solid;
+    border-width: 0.1rem;
+    background-color: #fff;
+    color: #e13d3a;
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.3rem;
+    transition: 0.2s;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.button2:hover{
+    opacity: 0.8;
+    background-color: #e13d3a;
+    color: #fff;
+}
+
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+
+/*-------------------- Logo ------------------------*/
+.logo{
+    font: 700 1.31rem 'Poppins', sans-serif;
+    color: #29292e;
+    
+    
+}
+.logo span{
+    color: #e13d3a;
+}
+
+.logo-alt span{
+    color: #fff;
+}
+
+.logo-alt{
+    color: #000;
+}
+
+.container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*Back to Top */
+
+.back-to-top{
+    background: #e13d3a;
+    color: #fff;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 0.5rem;
+    clip-path: circle();
+
+    font-size: 1.5rem;
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%)
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%)
+}
+

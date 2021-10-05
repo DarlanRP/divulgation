@@ -1,0 +1,48 @@
+#about {
+    background: #fff;
+}
+
+#about .container{
+    margin: 0;
+}
+
+#about .image img{
+    position: relative;
+}
+
+#about .image{
+    position: relative;
+}
+
+#about .image::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #e13d3ad0;
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+}
+
+#about .image img,
+#about .image::before{
+    border-radius: 0.25rem;
+}
+
+#about .text{
+   margin-left: 1.5rem;
+   margin-right: 1.5rem; 
+}
+
+.divider-2{
+    height: 2px;
+    background: linear-gradient(270deg, #647c7457 0%, #e13d3a 100%) ;
+}
+
+@media (min-width: 1200px){
+    #about .container{
+        margin: 0 auto;
+        grid-auto-flow: column;
+    }
+}
